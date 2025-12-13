@@ -100879,7 +100879,7 @@ a3Z(a){var s=0,r=A.Q(t._v),q,p=this,o,n,m
 var $async$yX=A.R(function(b,c){if(b===1)return A.N(c,r)
 while(true)switch(s){case 0:m=J
 s=3
-return A.S(p.ie("      SELECT \n        ISNULL(p.PaymentMethod, '0') as paymentMethod,\n        COUNT(*) as transactionCount,\n        SUM(p.Totalamount) as totalAmount,\n        AVG(p.Totalamount) as avgTransactionValue\n      FROM PAYMENTS p\n      WHERE p.OrderDate >= '"+a.a.da().split("T")[0]+"' AND p.OrderDate <= '"+a.b.da().split("T")[0]+" 23:59:59'\n      GROUP BY p.PaymentMethod\n      ORDER BY totalAmount DESC\n    "),$async$yX)
+return A.S(p.ie("      SELECT \n        ISNULL(p.PaymentMethod, '0') as paymentMethod,\n        COUNT(*) as transactionCount,\n        SUM(p.Totalamount) as totalAmount,\n        AVG(p.Totalamount) as avgTransactionValue\n      FROM PAYMENTS p\n      WHERE p.PaymentDate >= '"+a.a.da().split("T")[0]+"' AND p.PaymentDate <= '"+a.b.da().split("T")[0]+" 23:59:59'\n      GROUP BY p.PaymentMethod\n      ORDER BY totalAmount DESC\n    "),$async$yX)
 case 3:o=m.dm(c,new A.a6R(),t.HM)
 n=A.X(o,o.$ti.h("a8.E"))
 o=A.W(n).h("a2<1,eE>")
